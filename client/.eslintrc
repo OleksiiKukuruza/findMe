@@ -1,24 +1,33 @@
-extends:
-eslint-config-airbnb
-
-parser: babel-eslint
-
-settings: ecmascript: 6
-
-ecmaFeatures: jsx: true
-modules: true
-destructuring: true
-classes: true
-forOf: true
-blockBindings: true
-arrowFunctions: true
-
-env:
-browser: true
-
-rules: indent: 2
-func-style: 0
-func-names: 0
-comma-dangle: 0
-no-console: 0
-no-param-reassign: 0
+{
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "quotes": [
+      2,
+      "single"
+    ],
+    "strict": [
+      2,
+      "never"
+    ],
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/prefer-stateless-function": 0
+  },
+  "plugins": [
+    "react"
+  ]
+}
