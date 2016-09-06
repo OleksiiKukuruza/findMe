@@ -10,7 +10,7 @@ export default class Location extends Component {
   render() {
     const API_KEY = 'AIzaSyAe5IJKUNflOzXilyKErlps-RlNn-ws0lQ';
     return (
-      <div style={{ height: '100vh' }}>
+      <div style={{ height: 'calc(100vh - 64px)' }}>
         <GoogleMap
           bootstrapURLKeys={{
             key: API_KEY,
